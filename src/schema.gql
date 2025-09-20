@@ -1,0 +1,40 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type StudyPlan {
+  id: Int!
+  date: String!
+  subject: String!
+  content: String
+}
+
+type User {
+  id: Int!
+  email: String!
+  name: String
+  provider: String
+  providerId: String
+}
+
+type Query {
+  allUsers: [User!]!
+  planByDate(date: String!): StudyPlan
+  plansByUser: [StudyPlan!]
+  plansByRange(startDate: String!, endDate: String!): [StudyPlan!]
+}
+
+type Mutation {
+  createUser(email: String!): User!
+  updateUser(id: Float!, email: String!): User!
+  deleteUser(id: Float!): Boolean!
+  createPlan(input: CreatePlanInput!): StudyPlan!
+  updatePlan(id: Int!, content: String!): StudyPlan!
+  deletePlan(id: Int!): Boolean!
+}
+
+input CreatePlanInput {
+  date: String!
+  subject: String!
+  content: String
+}
