@@ -115,6 +115,15 @@ npm run start:dev
 
 ---
 
+## OAuth 로그인
+![OAuth 로그인 - google](./assets/login.png)
+
+## JWT
+![Google 로그인 이후 반환](./assets/login_result.png)
+
+## GraphQL Create Plan
+![Create Plan Mutation](./assets/graphql_mutation_create.png)
+
 ## ✨ 특징
 
 * **OAuth2.0 + JWT** 인증을 직접 구현 (Firebase 미사용)
