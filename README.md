@@ -118,8 +118,8 @@ npm run start:dev
 ## OAuth 로그인
 ![OAuth 로그인 - google](./assets/login.png)
 
-## JWT
-![Google 로그인 이후 반환](./assets/login_result.png)
+## JWT 토큰
+![JWT 토큰 발급 결과](./assets/login_result.png)
 
 ## GraphQL Create Plan
 ![Create Plan Mutation](./assets/graphql_mutation_create.png)
